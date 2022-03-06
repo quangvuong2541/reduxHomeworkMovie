@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Kotta+One&display=swap");
+
+.banner .layer-mask button:active,
+.banner .layer-mask button:focus {
+  outline: none;
+}
+
+.banner {
+  position: fixed;
+  background-image: url("../assets/banner.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+.layer-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.layer-mask h1 {
+  font-family: "Kotta One", serif;
+  text-transform: uppercase;
+  color: rgb(202, 166, 166);
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Kotta One", serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.col-8 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen {
+  background-color: #d88a04;
+  padding: 5px;
+  width: 80%;
+  filter: drop-shadow(4px 30px 20px rgba(255, 255, 255, 0.5));
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 10px;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+}
+
+.seat {
+  margin: 2em 0;
+}
+
+.seat li + li {
+  margin-left: 2rem;
+}
+
+.seat .greenBox {
+  display: inline-block;
+  color: #fff;
+}
+.seat .greenBox::before {
+  content: "";
+  background: rgb(109, 238, 109);
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.seat .redBox {
+  display: inline-block;
+  color: #fff;
+}
+
+.seat .redBox::before {
+  content: "";
+  background: rgb(240, 21, 21);
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.seat .emptyBox {
+  display: inline-block;
+  color: #fff;
+}
+.seat .emptyBox::before {
+  content: "";
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.book-left {
+  color: #d88a04;
+}
+ul.book-right {
+  color: #fff;
+}
+
+.info li {
+  padding: 5px;
+}
+
+.danhSachGhe {
+  width: 80%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hangGhe {
+  margin-bottom: 0.5rem;
+}
+
+.ghe {
+  border: 3px solid orange;
+  width: 42px;
+  height: 32px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 2.5%;
+  margin-bottom: 1%;
+  border-radius: 5px;
+}
+
+.banner .rowNumber {
+  width: 42px;
+  height: 32px;
+  background: none;
+  border: none;
+  margin-left: 2.6%;
+  margin-bottom: 1%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  cursor: auto;
+}
+.firstChar {
+  color: yellow;
+  font-size: 35px;
+  margin-right: 15px;
+}
+
+.reservedSeat {
+  background: rgb(240, 21, 21);
+  cursor: no-drop !important;
+  border: none;
+}
+
+.selectedSeat {
+  background: rgb(109, 238, 109);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
